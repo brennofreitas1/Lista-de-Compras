@@ -1,5 +1,6 @@
 .body{
     background-color: purple;
+    font-family: "inter", sans-serif ;
 }
 
 .h1{
@@ -13,13 +14,36 @@
     color: white;
 }
 
+.inp{
+    border-color: black;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+
 .list{
     color: white;
 }
 
-.img{
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    border-radius: 10px;
+.bta{
+   background-color: #27e60e; 
+   color: white;
+   border-color: white;
+   height: 40px;
+   width: 80px;
+   font-size: 16px;
+}
+
+.btl{
+    background-color: #fc1303;
+    color: white;
+    border-color: white;
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+}
+
+.tbl{
+    fonr-color: white;
+    font-size: 100px;
 }

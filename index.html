@@ -8,17 +8,26 @@
   </head>
   <body class="body">
     <h1 class="h1">Lista de Compras</h1>
-    <hr />
-    <img src="./assets/mercado.png" alt="Carro Mercado" class="img"/>
-    <hr />
     <p class="p">
-      Item: <input id="inputItem" type="txt" />
-      Qta: <input id="qtaItem" type="number"/>
-      Preço: <input id="preco" type="number"/>
-      <button id="btAdicionar">Adicionar</button>
-      <button id="btLimpar">Limpar</button>
+      <div class="inp">
+        Item: <input id="inputItem" type="txt" />
+        Quantidade: <input id="qtaItem" type="number"/>
+        Preço: <input id="preco" type="number"/>
+      </div>  
+      <button id="btAdicionar" class="bta">Adicionar</button>
+      <button id="btLimpar" class="btl">Limpar</button>
     </p>
     <hr />
     <ul id="lista" class="list"></ul>
+    <table class="tbl">
+      <table>
+        <tr>
+            <td>Item</td>
+            <td>Quantidade</td>
+            <td>Preço</td>
+            <td>Valor</td>
+        </tr>
+    </table>
+    </table>
   </body>
 </html>
