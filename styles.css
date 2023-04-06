@@ -1,5 +1,5 @@
 .body{
-    background-color: purple;
+    background-color: rgb(226, 5, 199);
     font-family: "inter", sans-serif ;
 }
 
@@ -8,21 +8,17 @@
     margin: 0;
     padding:10px;
     text-align: center;
-}
-
-.p{
-    color: white;
+    border-radius: 40px;
 }
 
 .inp{
+    background-color: yellow;
     border-color: black;
     color:white;
-    font-size: 20px;
-    text-align: center;
-}
-
-.list{
-    color: white;
+    float: right;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
 }
 
 .bta{
@@ -44,6 +40,19 @@
 }
 
 .tbl{
-    fonr-color: white;
-    font-size: 100px;
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    padding:30px;
+    border-radius: 10px;
+    margin: 0px auto; 
+    margin-top: 2%;
+    width:40%; 
+    border:1;
+    cellspacing: 10px;
+}
+
+.topo{
+    background-color: white;
+    padding: 40px;
 }

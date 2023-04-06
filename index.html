@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Compras</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-  </head>
-  <body class="body">
-    <h1 class="h1">Lista de Compras</h1>
-    <p class="p">
-      <div class="inp">
-        Item: <input id="inputItem" type="txt" />
-        Quantidade: <input id="qtaItem" type="number"/>
-        Preço: <input id="preco" type="number"/>
-      </div>  
-      <button id="btAdicionar" class="bta">Adicionar</button>
-      <button id="btLimpar" class="btl">Limpar</button>
-    </p>
-    <hr />
-    <ul id="lista" class="list"></ul>
-    <table class="tbl">
-      <table>
-        <tr>
-            <td>Item</td>
-            <td>Quantidade</td>
-            <td>Preço</td>
-            <td>Valor</td>
-        </tr>
+</head>
+<body class="body">
+  <h1 class="h1">Lista de Compras</h1>
+    <div class="inp">
+        <form>
+            
+            <input id="inputItem" type="text" placeholder="Item"> <br>
+        
+            <hr/>
+
+            <input id="inputQta" type="text" placeholder="Quantidade"> <br>
+        
+            <hr/>
+
+            <input id="inputPreco" type="text" placeholder="Preço"> <br>
+
+            <hr/>
+
+            <button id="btAdicionar" type="button" class="bta">Adicionar</button>
+            <button id="btLimpar" type="button" class="btl">Limpar</button>
+        </form>
+    </div>
+    <table id="tabela" class="tbl">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody id="tabela1" class="topo"></tbody>
     </table>
-    </table>
-  </body>
+</body>
 </html>
+
