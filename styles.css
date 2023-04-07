@@ -9,16 +9,33 @@
     padding:10px;
     text-align: center;
     border-radius: 40px;
+<<<<<<< HEAD
+=======
+}
+
+.p{
+    color: white;
+>>>>>>> 32cf94ce293f8cf0b19617c679932cdb912bbbd1
 }
 
 .inp{
     background-color: yellow;
     border-color: black;
     color:white;
+<<<<<<< HEAD
     float: right;
     border-radius: 10px;
     margin: 30px;
     padding: 10px;
+=======
+    font-size: 20px;
+    text-align: center;
+    all: unset; 
+}
+
+.list{
+    color: white;
+>>>>>>> 32cf94ce293f8cf0b19617c679932cdb912bbbd1
 }
 
 .bta{
@@ -37,11 +54,13 @@
     height: 40px;
     width: 80px;
     font-size: 16px;
+    text-align: left;
 }
 
 .tbl{
     background-color: yellow;
     color: black;
+<<<<<<< HEAD
     font-size: 20px;
     padding:30px;
     border-radius: 10px;
@@ -55,4 +74,10 @@
 .topo{
     background-color: white;
     padding: 40px;
+=======
+    font-size: 30px;
+    margin: 0;
+    padding:10px;
+ 
+>>>>>>> 32cf94ce293f8cf0b19617c679932cdb912bbbd1
 }
