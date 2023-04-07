@@ -13,14 +13,18 @@ function DescricaoItem(Item, qta, preco){
     this.preco = preco;
 }
 
-const redesenharTabela = () =>{
+    tabela.innerHTML = " ";
+
+function redesenharTabela() {
     const linhas = tabela.getElementsByTagName("tr");
-    
-    for(let i = linhas.length - 1; i > 0; i--){
-        tabela.removeChild(linhas[i]); 
+
+    for (let i = linhas.length - 1; i > 0; i--) {
+        tabela.removeChild(linhas[i]);
     }
 
-    for(let i = 0; i < listaItens.length; i++){
+    tabela.innerHTML = " ";
+
+    for (let i = 0; i < listaItens.length; i++) {
         const ItemText = document.createTextNode(listaItens[i].Item);
         const qtaText = document.createTextNode(listaItens[i].qta);
         const precoText = document.createTextNode(listaItens[i].preco);
@@ -41,7 +45,7 @@ const redesenharTabela = () =>{
 
         tabela.appendChild(linhaItem);
     }
-};
+}
 
 const handleBtAdicionarClick = () =>{
     const Item = inputItem.value;
@@ -65,19 +69,18 @@ const handleBtAdicionarClick = () =>{
 };
 
 const handleBtLimparClick = () =>{
-    const linhas = tabela.getElementsByTagName("tr");
-    
-    for(let i = linhas.length - 1; i > 0; i--){
-        tabela.removeChild(linhas[i]); 
-    }
+  const linhas = document.getElementsByTagName("tr");
 
-    listaItens = [];
+  for(let i = listaItens.length; i >= 0; i--){
+      tabela.removeChild(linhas[i]); 
+      listaItens = []
+  }
 
-    inputItem.value = "";
-    inputQta.value = "";
-    inputPreco.value = "";
+  inputItem.value = "";
+  inputQta.value = "";
+  inputPreco.value = "";
 
-    inputItem.focus();
+  inputNomeItem.focus();
 };
 
 btAdicionar.addEventListener("click", handleBtAdicionarClick);
